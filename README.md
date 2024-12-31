@@ -10,4 +10,6 @@ Docker containers need 3 environment variables:
 2. secret_name (where did you store the password to acess this database)
 3. region_name (where is this database)
 
+The resulting data is stored using FFIEC field codes--these can be found in the documentation [here](https://cdr.ffiec.gov/CDRDownload/CDR/UserGuide/v161/FFIEC%20UBPR%20Complete%20User%20Guide_2024-12-06.Zip). 
+
 It would be trivial to configure this to not do AWS, just write your own get_secret function. This one was directly ported from the AWS examples docs in 2022. 
